@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Listado de Productos</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilos/detalles.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
+        <p>Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p>10% descuento en la primera compra</p>
+        <p>Tarjeta Regalo</p>
+    </header>
+    
+    <main> <!-- Se usa para englobar todo el contenido principal de la página -->
+        <section id="cabecera">
+            <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
+                <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo"> <!-- Logotipo de la tienda -->
+
+                <figure id="search-bar">
+                    <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                    <input type="text" placeholder="Buscar"> <!-- Campo de texto para realizar búsquedas -->
+                    <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                </figure>
+                
+                <button id="dalelike">SUSCRIBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+        </section>
+
+        <nav> <!-- Define la barra de navegación principal -->
+            <a href="">Marcas</a>
+            <a href="">Productos</a>
+            <a href="">Blog</a>
+            <a href="">Contacto</a>
+            <!-- Iconos para usuario, favoritos y carrito -->
+            <figure id="iconos">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Carrito">
+            </figure>
+        </nav>
+
+        <nav class="breadcrumb"> <!-- Se ha utilizado nav para la parte de la ruta -->
+            <a href="#">Inicio</a> > <a href="#">Listado de Productos</a> > <a href="#">Detalles del Producto</a> <!-- Ruta de navegación -->
+        </nav>
+
+        <section id="producto"> <!-- Se ha utilizado section para casi todas las partes del código -->
+            <figure id="product-image"> <!-- Imagen del producto -->
+                <button>&lt;</button> <!-- Botón anterior -->
+                <img src="imagenes/det1.webp" alt="Producto"> <!-- Imagen principal del producto -->
+                <button>&gt;</button> <!-- Botón siguiente -->
+            </figure>
+            <aside id="relacionados"> <!-- Imágenes relacionadas -->
+                <img src="imagenes/det2.webp" alt="Relacionado 1"> <!-- Imagen relacionada 1 -->
+                <img src="imagenes/det3.jpg" alt="Relacionado 2"> <!-- Imagen relacionada 2 -->
+                <img src="imagenes/det4.webp" alt="Relacionado 3"> <!-- Imagen relacionada 3 -->
+                <img src="imagenes/det5.webp" alt="Relacionado 4"> <!-- Imagen relacionada 4 -->
+            </aside>
+        </section>
+
+        <section class="right-section"> <!-- Sección derecha con detalles del producto -->
+            <article class="product-details"> <!-- Detalles del producto -->
+                <h1>Centella Light Cleansing Oil</h1> <!-- Título del producto -->
+                <p>
+                    Aceite Limpiador Ligero y Suave <br>
+                    Descripción: <br> La Centella Asiática y 6 aceites de origen vegetal disuelven suavemente el maquillaje, el protector solar y el exceso de sebo en la piel, dejando un acabado fresco y libre de residuos grasos. <br>
+                    Beneficios del Producto: <br> Calmante, Hidratante, Exfoliación Suave <br>
+                    Tipo de Piel: <br> Normal, Seca, Sensible <br>
+                    Ingredientes Clave: <br> Extracto de Centella Asiática, Aceite de Fruta de Bergamota (Citrus Aurantium Bergamia), Aceite de Semilla de Girasol (Helianthus Annuus), Aceite de Fruta de Oliva (Olea Europaea), Aceite de Semilla de Jojoba (Simmondsia Chinensis) <br>
+                </p>
+            </article>
+            <div class="quantity-section"> <!-- Sección de cantidad y botón de añadir al carrito -->
+                <button>-</button><input type="number" value="1" min="1"><button>+</button> <!-- Botones para ajustar la cantidad -->
+                <button>Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+        </section>
+
+        <section> <!-- Sección con más detalles del producto -->
+            <figure>
+                <img src="imagenes/det6.jpg" width="200px" alt=""> <!-- Imagen adicional del producto -->
+            </figure>
+            <article>
+                <h3>Centella Light Cleansing Oil</h3> <!-- Subtítulo del producto -->
+                <ul> <!-- Lista de características del producto -->
+                    <li>Un limpiador ligero a base de aceite que derrite suavemente el maquillaje, la suciedad, los aceites y el protector solar sin irritar la zona de los ojos.</li>
+                    <li>Contiene aceite de Centella (Centella extraída con aceite MCT) y 6 aceites botánicos.</li>
+                    <li>El aceite limpiador micelar permite eliminar el exceso de grasa y maquillaje sin retirar los aceites naturales de la piel.</li>
+                    <li>Textura ligera similar al agua, ideal para quienes son nuevos en el uso de limpiadores en aceite.</li>
+                    <li>No comedogénico y disuelve el sebo para prevenir la congestión de los poros.</li>
+                </ul>
+                <h3>Centella Light Cleansing Oil</h3> <!-- Subtítulo del producto -->
+                <p>
+                    El aceite ligero de color marrón claro tiene una textura acuosa, ligera y suave. 
+                    Limpia sin dejar residuos grasos, dejando la piel fresca y renovada.
+                </p>
+            </article>
+        </section>
+
+        <section> <!-- Sección de ingredientes clave -->
+            <article>
+                <h2>INGREDIENTES CLAVE</h2> <!-- Título de la sección -->
+                <p>
+                    Extracto de Centella Asiática (1,000 ppm): La Centella Asiática contiene ingredientes activos como el ácido madecásico y el asiaticósido, 
+                    que ayudan en la síntesis de colágeno, promoviendo una excelente cicatrización de heridas y regeneración de la piel. También tiene 
+                    propiedades calmantes que ayudan en el cuidado de problemas cutáneos.
+                </p>
+                <p>
+                    Estearato de etilhexilo, etilhexanoato de cetilo, tetraoleato de sorbeth-30, extracto de centella asiática (10 000 ppm), aceite de 
+                    semilla de helianthus annuus (girasol), aceite de fruta de citrus aurantium bergamia (bergamota), aceite de fruta de olea europaea 
+                    (oliva), semilla de simmondsia chinensis (jojoba) Aceite, Etilhexilglicerina, Aceite de Flor de Pelargonium Graveolens, Aceite de 
+                    Flor de Rosa Damascena
+                </p>
+            </article>
+        </section>
+
+        <section> <!-- Sección de productos relacionados -->
+            <h1>RELACIONADOS</h1> <!-- Título de la sección -->
+            <aside>
+                <a href=""><img src="imagenes/det5.webp" width="150px" alt=""></a> <!-- Producto relacionado 1 -->
+                <a href=""><img src="imagenes/det7.webp" width="150px" alt=""></a> <!-- Producto relacionado 2 -->
+                <a href=""><img src="imagenes/det8.webp" width="150px" alt=""></a> <!-- Producto relacionado 3 -->
+            </aside>
+        </section>
+
+        <section> <!-- Sección de calificación del producto -->
+            <div class="rating">
+                <span class="stars"></span> <!-- Estrellas de calificación -->
+                <span>4.2 Based on 32 Reviews</span> <!-- Calificación basada en reseñas -->
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Se ha utilizado footer para el final de la página, donde se han creado dos sections, uno para las fotos y otro para el texto -->
+        <section id="metodos_pago"> <!-- Sección de métodos de pago -->
+            <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex"> <!-- Logo de Amex -->
+            <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay"> <!-- Logo de Apple Pay -->
+            <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay"> <!-- Logo de Google Pay -->
+            <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro"> <!-- Logo de Maestro -->
+            <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard"> <!-- Logo de MasterCard -->
+            <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App"> <!-- Logo de Shop App -->
+            <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay"> <!-- Logo de UnionPay -->
+            <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa"> <!-- Logo de Visa -->
+        </section>
+        <section id="condiciones"> <!-- Sección de condiciones -->
+            <p>ENVÍOS Y DEVOLUCIONES</p> <!-- Enlace a envíos y devoluciones -->
+            <p>TÉRMINOS Y CONDICIONES</p> <!-- Enlace a términos y condiciones -->
+            <p>DECLARACIÓN DE PRIVACIDAD(UE)</p> <!-- Enlace a declaración de privacidad -->
+            <p>AVISO LEGAL</p> <!-- Enlace a aviso legal -->
+        </section>
+    </footer>
+</body>
+</html>
