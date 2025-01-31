@@ -1,0 +1,24 @@
+El diseño es muy bonito, pero os cuento mejorías que podéis hacer.
+
+- Usáis muchas capturas de pantalla en lugar de crear los elementos con Figma, como los filtros o las rutinas. 
+
+- En el listado no queda bien el fondo blanco cuadrado de cada producto (menos uno, que no tiene). Aparte no tiene ninguna descripción. 
+
+- En la cabecera el espacio entre el cuadro de búsqueda y el botón de suscripción es más ancho que entre el de búsqueda y el logo. 
+
+- No habría puesto fondo a las migas de pan. 
+
+- No está relleno vuestro objetivo ni vuestra empresa en la página "Sobre nosotros". 
+
+- Las estrellas de las opciones las habría alineado mejor . 
+
+- Tantas caja en el diseño, requiere que esté bien alineado, y no lo está en varias ocasiones. 
+
+- El color amarillo de la página 404 rompe completamente el diseño. (DONE)
+
+- Al igual que ese azul del botón "Volver". (DONE)
+
+- La franja encima de la cabecera y luego debajo, del mismo color, lo haría distinto para que rompa quizás en un tono más subido 
+  el fondo de la de arriba. 
+
+- El botón Enviar es enano y descentrado. (DONE)

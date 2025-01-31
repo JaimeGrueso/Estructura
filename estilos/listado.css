@@ -110,6 +110,92 @@ nav a {
     width: 100vw;
 }
 
+#precios {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 12px;
+    align-items: center;
+} 
+
+#precios input {
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    text-align: center;
+}
+
+#rango {
+    width: 184px;
+}
+
+#categorias span {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#categorias li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#categorias input {
+    width: 20px;
+    height: 20px;
+}
+
+#mas {
+    text-decoration: underline;
+    color: black;
+    font-size: 18px;
+}
+
+#marcas span{
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#marcas li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#marcas input {
+    width: 20px;
+    height: 20px;
+}
+
+#tipospiel {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+
+}
+
+#tipospiel img {
+    width: 40px;
+    cursor: pointer;
+}
+
+#container .head {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+
+#container .head img {
+    width: 40px;
+    cursor: pointer;
+}
+
+#container h3 {
+    font-size: 24px;
+}
+
 #filtros {
     display: flex;
     justify-content: space-between;
@@ -135,9 +221,10 @@ nav a {
 #container {
     display: flex;
     flex-direction: row;
-    gap: 250px;
+    gap: 200px;
     align-items: flex-start;
     padding: 20px;
+    margin: 0 1%;
 }
 
 #productos {

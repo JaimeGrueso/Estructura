@@ -121,8 +121,6 @@ nav a {
     height: auto;
 }
 
-
-
 .form-container {
     background-color: #dbe5d3;
     border-radius: 10px;
@@ -161,21 +159,22 @@ input, textarea {
     border-radius: 5px;
     padding: 8px;
     font-size: 14px;
-    width: 100%;
     box-sizing: border-box;
 }
 
 textarea {
     resize: none;
-
 }
 
 .checkbox-group {
+    text-align: start;
     display: flex;
-    align-items:flex-start;
-    gap: 10px;
-    justify-content: flex-start; /* Alinea hacia la izquierda */
+    flex-direction: row;
     margin-bottom: 20px; /* Espacio inferior para mejor separación */
+}
+
+.privacidad {
+    margin-top: 6px;
 }
 
 .submit-button {
@@ -200,11 +199,10 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
 }
 
 #maps img {
-    width: 500px;
+    width: 539px;
     height: auto;
     border-radius: 10px;
 }
@@ -217,7 +215,7 @@ textarea {
 }
 
 #trabaja img {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
 }

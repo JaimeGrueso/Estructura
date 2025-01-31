@@ -33,7 +33,13 @@ main {
     justify-content: center;
     margin: auto;
     padding-bottom: 400px;
+}
 
+main img {
+    width: 700px;
+    border-radius: 40px;
+    object-fit: contain;
+    margin: 20px;
 }
 
 main button {
@@ -45,7 +51,7 @@ main button {
     background-color: #7AE0F6;
     color: black;
     font-size: 20px;
-    align-self: flex-end;
+    margin-left: 56vh;
 }
 
 footer {

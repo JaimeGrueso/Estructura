@@ -118,6 +118,7 @@ nav a {
 #nuestro {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #izquierda {
@@ -125,12 +126,18 @@ nav a {
     flex-direction: row;
     background-color: #dbe5d3;
     border-radius: 10px;
+    margin: 30px 0px;
 }
 
 #izquierda img {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
+}
+
+#izquierda h1 {
+    font-size: 30px;
+    margin: 30px;
 }
 
 #derecha {
@@ -138,25 +145,76 @@ nav a {
     flex-direction: row;
     background-color: #dbe5d3;
     border-radius: 10px;
+    margin: 30px 0px;
 }
 
 #derecha img {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
 }
 
+#derecha h1 {
+    font-size: 30px;
+    margin: 30px;
+}
+
+
 #prefooter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 20px;
 }
+
+#comentarios {
+    max-width: 600px;
+
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.comentario {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.estrellas {
+    font-size: 1.2em;
+    color: black; /* Dorado */
+    margin: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+}
+
+#imgmid  {
+    width: 500px;
+    border-radius: 40px;
+}
+
+#imgmid img { 
+    width: 500px;
+    border-radius: 40px;
+}
+
 
 #cosasderecha {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-left: 200px;
 }
 
 #cosasderecha img {

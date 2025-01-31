@@ -24,7 +24,7 @@
                     <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
                 </figure>
                 
-                <button id="dalelike">SUSCRIBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+                <button id="dalelike">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
         </section>
 
         <nav> <!-- Define la barra de navegación principal -->
@@ -67,21 +67,59 @@
         <section id="container">
             <aside> <!-- Se ha utilizado aside para la parte de la izquierda donde se encuentran los filtros -->
                 <div class="filters">
+                    <section class="head">
                     <h3>Precio</h3>
-                    <input type="range" min="0" max="27" value="0">
-                    <span>€0 - €27</span>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                    <div id="precios">
+                        <input type="text" value="€0" disabled>
+                        <span>-</span>
+                        <input type="text" value="€27" disabled>
+                    </div>
+                    <input id="rango" type="range" min="0" max="27" value="€0">
                 </div>
-                <div class="filters">
+                <br>
+                <br>
+                <div id="categorias">
+                    <section class="head">
                     <h3>Categoría</h3>
-                    <ul>
-                        <li><input type="checkbox"> Serum (2)</li>
-                        <li><input type="checkbox"> Corporal (1)</li>
-                        <li><input type="checkbox"> Facial (6)</li>
-                        <li><input type="checkbox"> Hidratante SPF (1)</li>
-                        <li><input type="checkbox"> Limpiador (1)</li>
-                        <li><input type="checkbox"> Exfoliante (1)</li>
-                        <li><input type="checkbox"> Hidratante (2)</li>
-                    </ul>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                        <li><input type="checkbox"><span>Serum (2)</span></li>
+                        <li><input type="checkbox"><span>Corporal (1)</span></li>
+                        <li><input type="checkbox"><span>Facial (6)</span></li>
+                        <li><input type="checkbox"><span>Hidratante SPF (1)</span></li>
+                        <li><input type="checkbox"><span>Limpiador (1)</span></li>
+                        <li><input type="checkbox"><span>Exfoliante (1)</span></li>
+                        <li><input type="checkbox"><span>Hidratante (2)</span></li>
+
+                        <br>
+
+                        <a id="mas" href="" >Mostrar más</a>
+                </div>
+                <br>
+                <br>
+                <div id="marcas">
+                    <section class="head">
+                    <h3>Marcas</h3>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                        <li><input type="checkbox"><span>Apad (1)</span></li>
+                        <li><input type="checkbox"><span>Atache (1)</span></li>
+                        <li><input type="checkbox"><span>Biologique Recherche (1)</span></li>
+                        <li><input type="checkbox"><span>Bioregena (1)</span></li>
+                        <li><input type="checkbox"><span>Bioregena (1)</span></li>
+                        <li><input type="checkbox"><span>Bioregena (1)</span></li>
+
+                        <br>
+
+                        <a id="mas" href="" >Mostrar más</a>
+                </div>
+                <br>
+                <br>
+                <div id="tipospiel">
+                    <h3>Tipos de Piel</h3>
+                    <img src="diw img/add_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
             </aside>
 
