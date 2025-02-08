@@ -7,13 +7,23 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #F1E9D9;
+    background-color: #AF8D41;
     padding: 10px;
     padding-left: 8vh;
     padding-right: 8vh;
-    font-size: 12px;
-    color: black;
+    font-size: 15px;
+    color: white;
     text-align: center;
+}
+
+header p {
+    transition: color 0.1s linear, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header p:hover {
+    color: white;
+    transform: scale(1.2);
 }
 
 main {
@@ -35,17 +45,26 @@ section {
 #logo {
     height: auto;
     width: 240px;
+    cursor: pointer;
 }
 
 #dalelike {
     font-size: 30px;
     width: 20%;
-    background-color: #F1E9D9;
+    background-color: #D0B781 ;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
-    color: black;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+#dalelike:hover {
+    background-color: #E0D4C3;
+    transform: scale(1.05);
 }
 
 #search-bar {
@@ -55,6 +74,8 @@ section {
     padding: 14px 10px;
     border-radius: 40px;
     width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 #search-bar img {
@@ -90,11 +111,18 @@ nav {
     margin-top: 20px;
     font-size: 24px;
     padding: 0 40px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease;
+}
+
+
+nav a:hover {
+    transform: scale(1.2);
 }
 
 #iconos {
@@ -107,6 +135,11 @@ nav a {
 #iconos img {
     width: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#iconos img:hover {
+    transform: scale(1.2);
 }
 
 /* Imagen principal */
@@ -138,17 +171,52 @@ nav a {
     border-radius: 20px;
     font-size: 24px;
     color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
-/* Carrusel de imágenes */
-#carrusel_imagenes {
-    display: flex;
-    justify-content: space-between;
+#botones button:hover {
+    background-color: #CFDCCF;
+    transform: scale(1.05);
+}
+
+/* Contenedor del carrusel */
+.carousel {
+    width: 100vw; /* Ocupa el ancho total */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: white;
     margin-top: 20px;
 }
 
-#carrusel_imagenes img {
-    width: 200px;
+/* Contenedor de las imágenes (se moverá) */
+.carousel-track {
+    display: flex;
+    width: 200%; /* Doble del tamaño para la animación */
+    animation: scroll 10s linear infinite;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Imágenes del carrusel */
+.carousel img {
+    width: 200px; /* Cada imagen ocupa el 100% del ancho de la pantalla */
+    height: auto;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Se mueve la mitad del contenedor */
+}
+
+/* Clonamos las imágenes para que sea un bucle infinito */
+.carousel-track img {
+    flex-shrink: 0;
 }
 
 /* Secciones laterales */
@@ -165,6 +233,10 @@ nav a {
 #fotos-laterales img {
     width: 100%;
     border-radius: 30px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Rutinas */
@@ -191,7 +263,6 @@ nav a {
     font-size: 24px;
     color: black;
     width: 16%;
-
 }
 
 #redes_fotos {
@@ -202,6 +273,10 @@ nav a {
 #redes_fotos img {
     width: 40%;
     border-radius: 30px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 /* Footer */
@@ -211,6 +286,7 @@ footer {
     padding: 20px;
     font-size: 12px;
     color: black;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago {
@@ -220,11 +296,18 @@ footer {
     background-color: white;
     width: fit-content;
     margin: auto;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago img {
     margin: 0 10px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#metodos_pago img:hover {
+    transform: scale(1.1);
 }
 
 #condiciones {
@@ -233,8 +316,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    transition: margin-top 0.3s ease;
+    cursor: pointer;
 }
 
 #condiciones p {
     font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#condiciones p:hover {
+    color: black;
+    transform: scale(1.2);
 }

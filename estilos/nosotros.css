@@ -7,13 +7,23 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #F1E9D9;
+    background-color: #AF8D41;
     padding: 10px;
     padding-left: 8vh;
     padding-right: 8vh;
-    font-size: 12px;
-    color: black;
+    font-size: 15px;
+    color: white;
     text-align: center;
+}
+
+header p {
+    transition: color 0.1s linear, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header p:hover {
+    color: white;
+    transform: scale(1.2);
 }
 
 main {
@@ -35,17 +45,26 @@ section {
 #logo {
     height: auto;
     width: 240px;
+    cursor: pointer;
 }
 
 #dalelike {
     font-size: 30px;
     width: 20%;
-    background-color: #F1E9D9;
+    background-color: #D0B781 ;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
-    color: black;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+#dalelike:hover {
+    background-color: #E0D4C3;
+    transform: scale(1.05);
 }
 
 #search-bar {
@@ -55,6 +74,8 @@ section {
     padding: 14px 10px;
     border-radius: 40px;
     width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 #search-bar img {
@@ -90,11 +111,18 @@ nav {
     margin-top: 20px;
     font-size: 24px;
     padding: 0 40px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease;
+}
+
+
+nav a:hover {
+    transform: scale(1.2);
 }
 
 #iconos {
@@ -107,12 +135,24 @@ nav a {
 #iconos img {
     width: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#iconos img:hover {
+    transform: scale(1.2);
+}
+
+#aboutus {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #aboutus img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     margin-top: 20px;
+    object-fit: cover;
 }
 
 #nuestro {
@@ -125,38 +165,65 @@ nav a {
     display: flex;
     flex-direction: row;
     background-color: #dbe5d3;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 30px 0px;
+    width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
 #izquierda img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+    width: 400px;
+    height: 710px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-#izquierda h1 {
-    font-size: 30px;
+#texto-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 30px;
+}
+
+#texto-izq h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+#texto-izq p {
+    font-size: 20px;
 }
 
 #derecha {
     display: flex;
     flex-direction: row;
     background-color: #dbe5d3;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 30px 0px;
+    width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
 #derecha img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+    width: 400px;
+    height: 710px;
+    border-radius: 0px 20px 20px 0px;
 }
 
-#derecha h1 {
-    font-size: 30px;
+#texto-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 30px;
+}
+
+#texto-der h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#texto-der p {
+    font-size: 20px;
 }
 
 
@@ -180,11 +247,20 @@ nav a {
     text-align: left;
 }
 
-.estrellas {
-    font-size: 1.2em;
-    color: black; /* Dorado */
-    margin: 0;
-    font-weight: bold;
+/* Estrellas de calificación */
+.stars::before {
+    content: '\2605 \2605 \2605 \2605 \2606';
+    /* Estrellas con una vacía */
+    color: #c1a05f;
+    /* Color dorado */
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.stars {
+    font-size: 20px;
+    color: #c1a05f;
+    margin-top: 0;
 }
 
 h1 {
@@ -202,11 +278,13 @@ p {
 #imgmid  {
     width: 500px;
     border-radius: 40px;
+    margin-top: 100px;
 }
 
-#imgmid img { 
+#imgmid video { 
     width: 500px;
     border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
 
@@ -220,13 +298,22 @@ p {
 #cosasderecha img {
     width: 200px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
 #cosasderecha button {
-    background-color:  #FDE2E8;
+    background-color: #FDE2E8;
     padding: 30px;
     border: none;
     border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#cosasderecha button:hover {
+    background-color: #FBCBD3;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -236,6 +323,7 @@ footer {
     padding: 20px;
     font-size: 12px;
     color: black;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago {
@@ -245,11 +333,18 @@ footer {
     background-color: white;
     width: fit-content;
     margin: auto;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago img {
     margin: 0 10px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#metodos_pago img:hover {
+    transform: scale(1.1);
 }
 
 #condiciones {
@@ -258,8 +353,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    transition: margin-top 0.3s ease;
+    cursor: pointer;
 }
 
 #condiciones p {
     font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#condiciones p:hover {
+    color: black;
+    transform: scale(1.2);
 }

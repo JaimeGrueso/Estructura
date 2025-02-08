@@ -7,13 +7,23 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #F1E9D9;
+    background-color: #AF8D41;
     padding: 10px;
     padding-left: 8vh;
     padding-right: 8vh;
-    font-size: 12px;
-    color: black;
+    font-size: 15px;
+    color: white;
     text-align: center;
+}
+
+header p {
+    transition: color 0.1s linear, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header p:hover {
+    color: white;
+    transform: scale(1.2);
 }
 
 main {
@@ -35,17 +45,26 @@ section {
 #logo {
     height: auto;
     width: 240px;
+    cursor: pointer;
 }
 
 #dalelike {
     font-size: 30px;
     width: 20%;
-    background-color: #F1E9D9;
+    background-color: #D0B781 ;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
-    color: black;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+#dalelike:hover {
+    background-color: #E0D4C3;
+    transform: scale(1.05);
 }
 
 #search-bar {
@@ -55,6 +74,8 @@ section {
     padding: 14px 10px;
     border-radius: 40px;
     width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 #search-bar img {
@@ -90,11 +111,18 @@ nav {
     margin-top: 20px;
     font-size: 24px;
     padding: 0 40px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease;
+}
+
+
+nav a:hover {
+    transform: scale(1.2);
 }
 
 #iconos {
@@ -107,6 +135,11 @@ nav a {
 #iconos img {
     width: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#iconos img:hover {
+    transform: scale(1.2);
 }
 
 #mid {
@@ -126,8 +159,7 @@ nav a {
     border-radius: 10px;
     padding: 20px 30px;
     width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);}
 
 h1 {
     text-align: center;
@@ -154,16 +186,18 @@ label {
     color: #2d2d2d;
 }
 
-input, textarea {
+.form-group input, textarea {
     border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 8px;
     font-size: 14px;
     box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 textarea {
     resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .checkbox-group {
@@ -188,6 +222,7 @@ textarea {
     text-align: center;
     display: inline-block; /* Asegura que se quede alineado con otros elementos */
     margin-left: 0; /* Elimina cualquier centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -201,32 +236,44 @@ textarea {
     justify-content: space-between;
 }
 
-#maps img {
-    width: 539px;
-    height: auto;
-    border-radius: 10px;
+#maps iframe {
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: none;
 }
 
 #trabaja {
     display: flex;
     flex-direction: row;
     background-color: #dbe5d3;
-    border-radius: 10px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #trabaja img {
     width: 300px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px 0 0 20px;
 }
 
+#texto-trabaja {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+    padding: 0 20px;
+}
 
+/* Footer */
 footer {
     margin-top: 20px;
     background-color: #F1E9D9;
     padding: 20px;
     font-size: 12px;
     color: black;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago {
@@ -236,11 +283,18 @@ footer {
     background-color: white;
     width: fit-content;
     margin: auto;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 #metodos_pago img {
     margin: 0 10px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#metodos_pago img:hover {
+    transform: scale(1.1);
 }
 
 #condiciones {
@@ -249,8 +303,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    transition: margin-top 0.3s ease;
+    cursor: pointer;
 }
 
 #condiciones p {
     font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#condiciones p:hover {
+    color: black;
+    transform: scale(1.2);
 }

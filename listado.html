@@ -8,9 +8,9 @@
 </head>
 <body>
     <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
-        <p>Envíos gratis > a 40€ Península | 75€ Península</p>
-        <p>10% descuento en la primera compra</p>
-        <p>Tarjeta Regalo</p>
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
     </header>
     
     <main> <!-- Se usa para englobar todo el contenido principal de la página -->
@@ -24,19 +24,19 @@
                     <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
                 </figure>
                 
-                <button id="dalelike">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
         </section>
 
         <nav> <!-- Define la barra de navegación principal -->
-            <a href="">Marcas</a>
-            <a href="">Productos</a>
-            <a href="">Blog</a>
-            <a href="">Contacto</a>
+            <a href="inicio.html#carousel">Marcas</a>
+            <a href="listado.html">Productos</a>
+            <a href="nosotros.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
             <!-- Iconos para usuario, favoritos y carrito -->
             <figure id="iconos">
-                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Usuario">
-                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Favoritos">
-                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Carrito">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
             </figure>
         </nav>
 
@@ -125,42 +125,130 @@
 
             <!-- Listado de productos -->
             <section id="productos"> <!-- Sección principal para mostrar productos -->
-                <div class="prod"> <!-- Cada producto está en un contenedor individual -->
-                    <img src="imagenes/Producto 1.webp" height="230px" width="230px" alt="">
-                    <p>Vegan Kombucha Tea Gel</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/producto 2.webp" height="230px" width="230px" alt="">
-                    <p>Vegan Kombucha Tea Essense</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod3.webp" height="230px" width="230px" alt="">
-                    <p>aPAD 20% acelaico</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod4.png" height="230px" width="230px" alt="">
-                    <p>Madagascar Centella Ampoule</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod5.webp" height="230px" width="230px" alt="">
-                    <p>Baume Lavant Topialyse</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod6.webp" height="230px" width="230px" alt="">
-                    <p>Oxybiome Cleansing Micellar Water</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod7.webp" height="230px" width="230px" alt="">
-                    <p>The Niacinamide 15</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod8.webp" height="230px" width="230px" alt="">
-                    <p>Step 003 Serum</p>
-                </div>
-                <div class="prod">
-                    <img src="imagenes/prod9.webp" height="230px" width="230px" alt="">
-                    <p>Niacinamide Cucumber Aqua Gel Cream</p>
-                </div>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                            <img src="imagenes/Producto 1.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Vegan Kombucha Tea Gel
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/producto 2.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Vegan Kombucha Tea Essense
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod3.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    aPAD 20% acelaico
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="diw img/prod4-Photoroom.jpg" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Madagascar Centella Ampoule
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod5.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Baume Lavant Topialyse
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod6.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Oxybiome Cleansing Micellar Water
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod7.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    The Niacinamide 15
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod8.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Step 003 Serum
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod9.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Niacinamide Cucumber Aqua Gel Cream
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
             </section>
         </section>
     </main>

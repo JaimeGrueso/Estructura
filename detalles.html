@@ -8,9 +8,9 @@
 </head>
 <body>
     <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
-        <p>Envíos gratis > a 40€ Península | 75€ Península</p>
-        <p>10% descuento en la primera compra</p>
-        <p>Tarjeta Regalo</p>
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
     </header>
     
     <main> <!-- Se usa para englobar todo el contenido principal de la página -->
@@ -24,25 +24,25 @@
                     <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
                 </figure>
                 
-                <button id="dalelike">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
         </section>
 
         <nav> <!-- Define la barra de navegación principal -->
-            <a href="">Marcas</a>
-            <a href="">Productos</a>
-            <a href="">Blog</a>
-            <a href="">Contacto</a>
+            <a href="inicio.html#carousel">Marcas</a>
+            <a href="listado.html">Productos</a>
+            <a href="nosotros.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
             <!-- Iconos para usuario, favoritos y carrito -->
             <figure id="iconos">
-                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Usuario">
-                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Favoritos">
-                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Carrito">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
             </figure>
         </nav>
 
-        <nav class="breadcrumb"> <!-- Se ha utilizado nav para la parte de la ruta -->
-            <a href="#">Inicio</a> > <a href="#">Listado de Productos</a> > <a href="#">Detalles del Producto</a> <!-- Ruta de navegación -->
-        </nav>
+        <section class="breadcrumb"> <!-- Se ha utilizado nav para la parte de la ruta -->
+            <a href="inicio.html">Inicio</a><span>  ->  </span><a href="listado.html">Listado de Productos</a>  ->  <a href="#">Detalles del Producto</a> <!-- Ruta de navegación -->
+        </section>
 
         <section id="principio">
             <section id="producto"> <!-- Se ha utilizado section para casi todas las partes del código -->
@@ -107,9 +107,9 @@
             <section id="rel"> <!-- Sección de productos relacionados -->
                 <h1>RELACIONADOS</h1> <!-- Título de la sección -->
                 <aside class="related-products">
-                    <a href=""><img src="imagenes/det5.webp" width="150px" alt=""></a> <!-- Producto relacionado 1 -->
-                    <a href=""><img src="imagenes/det7.webp" width="150px" alt=""></a> <!-- Producto relacionado 2 -->
-                    <a href=""><img src="imagenes/det8.webp" width="150px" alt=""></a> <!-- Producto relacionado 3 -->
+                    <a href=""><img src="imagenes/det5.webp" alt=""></a> <!-- Producto relacionado 1 -->
+                    <a href=""><img src="imagenes/det7.webp" alt=""></a> <!-- Producto relacionado 2 -->
+                    <a href=""><img src="imagenes/det8.webp" alt=""></a> <!-- Producto relacionado 3 -->
                 </aside>
             </section>
         </section>
@@ -136,7 +136,7 @@
                 <div class="rating">
                     <div id="calificacion">
                         <p>4.2</p>
-                        <span class="stars"></span><!-- Estrellas de calificación -->
+                        <p class="stars"></p><!-- Estrellas de calificación -->
                     </div>
                     <span>Based on 32 Reviews</span> <!-- Calificación basada en reseñas -->
                 </div>
