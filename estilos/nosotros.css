@@ -165,65 +165,62 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     background-color: #dbe5d3;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 30px 0px;
-    width: 900px;
+    width: 45%;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
+    height: fit-content;
 }
 
 #izquierda img {
-    width: 400px;
-    height: 710px;
-    border-radius: 20px 0px 0px 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 30px 0px 0px 30px;
 }
 
 #texto-izq {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 30px;
+    margin: 15px;
 }
 
 #texto-izq h1 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 22px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 #texto-izq p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #derecha {
     display: flex;
     flex-direction: row;
     background-color: #dbe5d3;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 30px 0px;
-    width: 900px;
+    width: 45%;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
 #derecha img {
-    width: 400px;
-    height: 710px;
+    width: 300px;
+    height: auto;
     border-radius: 0px 20px 20px 0px;
 }
 
 #texto-der {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 30px;
+    margin: 15px;
 }
 
 #texto-der h1 {
-    font-size: 30px;
-    text-align: center;
+    font-size: 24px;
 }
 
 #texto-der p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -231,15 +228,17 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #comentarios {
-    max-width: 600px;
-
+    width: 33%;
     padding: 20px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: black;
+    height: auto;
 }
 
 .comentario {
@@ -276,28 +275,27 @@ p {
 }
 
 #imgmid  {
-    width: 500px;
+    width: 33%;
     border-radius: 40px;
-    margin-top: 100px;
 }
 
-#imgmid video { 
+#imgmid img { 
     width: 500px;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
-
 #cosasderecha {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-left: 200px;
+    width: 33%;
+    height: auto;
 }
 
-#cosasderecha img {
-    width: 200px;
-    border-radius: 10px;
+#cosasderecha video {
+    width: 100%;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 }
 
@@ -308,6 +306,7 @@ p {
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
     cursor: pointer;
+    font-size: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 

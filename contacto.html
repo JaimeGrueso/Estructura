@@ -16,7 +16,7 @@
     <main> <!-- Se usa para englobar todo el contenido principal de la página -->
         <section id="cabecera">
             <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
-                <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+            <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
 
                 <figure id="search-bar">
                     <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
@@ -40,38 +40,48 @@
             </figure>
         </nav>
 
-        <section id="mid">
-            <img src="imagenes/Contactanos.png" alt="">
+        <div id="medio">
+            
+            <img src="diw img/450_1000.jpeg" alt="">
+
+            <section id="mid">
+                <img src="imagenes/Contactanos.png" alt="">
+            
+                <div class="form-container">
+                    <h1>ATENCIÓN AL CLIENTE</h1>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="10" required></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad" class="privacidad">Acepto la política de privacidad</label>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <img src="diw img/904de97d6d3f48b63e31128afef9bea4.jpg" alt="">
+            
+        </div>
+
         
-            <div class="form-container">
-                <h1>ATENCIÓN AL CLIENTE</h1>
-                <form action="#" method="post">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo electrónico</label>
-                            <input type="email" id="correo" name="correo" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="10" required></textarea>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <label for="privacidad" class="privacidad">Acepto la política de privacidad</label>
-                    </div>
-                    <button type="submit" class="submit-button">Enviar</button>
-                </form>
-            </div>
-        </section>
 
         <section id="abajo">
             <figure id="maps">
@@ -88,8 +98,8 @@
                         creativas y comprometidas con la innovación, la sostenibilidad y el bienestar. Si te entusiasma el mundo de la cosmética y quieres 
                         formar parte de una empresa que valora el talento, la diversidad y el desarrollo profesional, ¡este es tu lugar! <br><br><br>
 
-                        💼 Únete a nuestro equipo y sé parte de la revolución en la cosmética sostenible.
-                        📩 Envíanos tu CV y déjanos conocerte mejor.
+                        💼 Únete a nuestro equipo y sé parte de la revolución en la cosmética sostenible. <br>
+                        📩 Envíanos tu CV y déjanos conocerte mejor. <br>
                         👉 Aplica aquí o escríbenos a rrhh@rnala.com
                     </p>
                 </div>

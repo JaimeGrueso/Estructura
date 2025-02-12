@@ -213,9 +213,9 @@ nav a:hover {
 #tipospiel {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 300px;
     justify-content: space-between;
-
+    padding: 0 3vh;
 }
 
 #tipospiel img {
@@ -226,7 +226,7 @@ nav a:hover {
 #container .head {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 300px;
     justify-content: space-between;
 }
 
@@ -277,10 +277,9 @@ nav a:hover {
     gap: 40px;
     background-color: #CFDCCF; /* Color verde claro */
     border-radius: 20px;
-    width: 70%;
+    width: 60%;
     height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
 }
 
 .prod {
@@ -289,9 +288,9 @@ nav a:hover {
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s ease;
-    width: 230px;
-    height: 230px;
-    margin: 50px;
+    width: 200px;
+    height: 200px;
+    margin: 15%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -299,8 +298,8 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     margin: 0;
     padding: 0;
 }
@@ -309,8 +308,8 @@ nav a:hover {
     display: block;
     border-radius: 20px;
     transition: filter 0.3s ease;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     margin: 0;
     padding: 0;
 }
@@ -320,8 +319,8 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,14 +356,6 @@ nav a:hover {
     margin: 0;
     padding: 0;
 }
-
-/* Efecto Click */
-.prod:active {
-    transform: scale(0.95);
-    margin: 0;
-    padding: 0;
-} 
-
 
 /* Footer */
 footer {
