@@ -1,7 +1,11 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
 /* Estilos generales */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 header {
@@ -19,6 +23,7 @@ header {
 header p {
     transition: color 0.1s linear, transform 0.3s ease;
     cursor: pointer;
+    font-family: 'Playfair Display', serif;
 }
 
 header p:hover {
@@ -59,11 +64,11 @@ section {
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
+    font-family: 'Playfair Display', serif;
 }
 
 #dalelike:hover {
-    background-color: #E0D4C3;
+    background-color: #695427;
     transform: scale(1.05);
 }
 
@@ -75,7 +80,6 @@ section {
     border-radius: 40px;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
 }
 
 #search-bar img {
@@ -90,6 +94,7 @@ section {
     outline: none;
     border: none;
     background-color: #CFDCCF;
+    font-family: 'Playfair Display', serif;
 }
 
 #search-bar button {
@@ -99,7 +104,7 @@ section {
     cursor: pointer;
     border-radius: 20px;
     font-size: 12px;
-    color: #666;
+    color: black;
 }
 
 /* Navegación */
@@ -118,6 +123,7 @@ nav a {
     text-decoration: none;
     color: black;
     transition: transform 0.3s ease;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -164,7 +170,7 @@ nav a:hover {
 #izquierda {
     display: flex;
     flex-direction: row;
-    background-color: #dbe5d3;
+    background-color: #9EBAA0;
     border-radius: 30px;
     margin: 30px 0px;
     width: 45%;
@@ -196,7 +202,7 @@ nav a:hover {
 #derecha {
     display: flex;
     flex-direction: row;
-    background-color: #dbe5d3;
+    background-color: #9EBAA0;
     border-radius: 30px;
     margin: 30px 0px;
     width: 45%;
@@ -311,7 +317,7 @@ p {
 }
 
 #cosasderecha button:hover {
-    background-color: #FBCBD3;
+    background-color: #F67D98;
     transform: scale(1.05);
 }
 

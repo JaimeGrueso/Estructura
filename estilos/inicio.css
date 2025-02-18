@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 header {
@@ -59,11 +59,12 @@ section {
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Playfair Display', serif;
 
 }
 
 #dalelike:hover {
-    background-color: #E0D4C3;
+    background-color: #695427;
     transform: scale(1.05);
 }
 
@@ -90,6 +91,7 @@ section {
     outline: none;
     border: none;
     background-color: #CFDCCF;
+    font-family: 'Playfair Display', serif;
 }
 
 #search-bar button {
@@ -174,7 +176,7 @@ nav a:hover {
     color: black;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
+    font-family: 'Playfair Display', serif;
 }
 
 #botones button:hover {
@@ -264,6 +266,7 @@ nav a:hover {
     font-size: 24px;
     color: black;
     width: 16%;
+    font-weight: bold;
 }
 
 #redes_fotos {

@@ -1,3 +1,7 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -100,7 +104,7 @@ main button {
 }
 
 main button:hover {
-    background-color: #5AC0D6;
+    background-color: #096E84;
     color: white;
     transform: scale(1.05);
 }
